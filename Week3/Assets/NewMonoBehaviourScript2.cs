@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class CameraTrigger : MonoBehaviour
+public class CameraTriggerEnd : MonoBehaviour
 {
     public Camera fromCamera;
     public Camera toCamera;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Domino")) 
         {
             if (fromCamera != null)
             {
